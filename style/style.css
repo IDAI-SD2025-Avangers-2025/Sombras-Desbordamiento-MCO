@@ -1,1 +1,115 @@
 /* CONTENDIO DE LOS CSS */
+/* Reset simple */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e9ecef;
+  color: #1c1c1c;
+  padding: 20px;
+}
+
+/* Títulos y separación */
+header, footer { text-align: center; margin-bottom: 16px; }
+h1 { font-size: 1.5rem; margin-bottom: 8px; }
+
+/* Contenedor para párrafos  */
+#contenedor {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.06);
+}
+#contenedor p { margin: 10px 0; }
+
+/* Colores por posición */
+#contenedor p:first-child    { color: #e63946; }   /* primer elemento */
+#contenedor p:nth-child(2)   { color: #1d3557; }   /* segundo */
+#contenedor p:nth-child(odd) { color: #2d2d2d; }   /* impares */
+#contenedor p:nth-child(even){ color: #666; }      /* pares */
+#contenedor p:last-child     { color: #2a9d8f; }   /* último */
+
+/* Caja para los ejemplos */
+.box {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Ejemplos */
+#Ejemplo1 {
+  background: #fff9db;
+  border: 6px double #ff8c42;
+  border-radius: 14px;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.1);
+}
+
+#Ejemplo2 {
+  background: #ffe0ec;
+  border-radius: 12px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.15);
+}
+
+#Ejemplo3 {
+  background: #e0f7ff;
+  border-radius: 50%;
+  border: 4px dotted #0077b6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#Ejemplo4 {
+  background: #ebfff2;
+  border-radius: 50%;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+#Ejemplo5 {
+  background: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 4px 7px 16px rgba(0, 0, 0, 0.08);
+}
+
+#Ejemplo6 {
+  background: #ffe6f0;
+  border-radius: 16px;
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.14);
+}
+
+/* desbordamiento */
+.box-overflow {
+  background: #ffffff;
+  padding: 12px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 14px;
+  overflow: visible; /* por defecto */
+}
+
+/* clases */
+.box-overflow.visible { overflow: visible; } /* se ve el contenido que sale */
+.box-overflow.hidden  { overflow: hidden; }  /* lo que sale se corta */
+.box-overflow.scroll  { overflow: scroll; }  /* siempre muestra scroll */
+.box-overflow.auto    { overflow: auto; }    /* muestra scroll solo si hace falta */
+
+/* Footer pequeño */
+footer p {
+  font-size: 0.88rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Responsive
+ simple */
+@media (max-width: 520px) {
+  body { padding: 14px; }
+  .box, .box-overflow { min-height: 100px; padding: 12px; }
+}

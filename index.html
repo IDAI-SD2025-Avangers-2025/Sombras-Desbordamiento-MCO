@@ -4,10 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Act. Sombras y Desbordamiento</title>
 </head>
 <body>
     
-    <!-- CONTENIDO DE LOS CUADROS -->
+  <!-- Enlace a la hoja de estilos (style.css) -->
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sombras (box-shadow, text-shadow) y Desbordamiento (overflow)</h1>
+    <p class="lead">Ejemplos prácticos para la actividad — conserva estructura y comentarios.</p>
+  </header>
+
+  <main>
+    <!-- Contenedor de párrafo -->
+    <section id="contenedor" class="card">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+
+    <hr>
+
+    <!--   cajas con sombras y text-shadow -->
+    <section id="ejemplos" class="grid">
+      <div id="Ejemplo1" class="box">
+        <p>Ejemplo 1 — borde y caja con sombra.</p>
+      </div>
+
+      <div id="Ejemplo2" class="box">
+        <p>Ejemplo 2 — múltiples sombras (box-shadow).</p>
+      </div>
+
+      <div id="Ejemplo3" class="box">
+        <p>Ejemplo 3 — text-shadow pronunciada.</p>
+      </div>
+
+      <div id="Ejemplo4" class="box">
+        <p>Ejemplo 4 — sombra difusa y border-radius.</p>
+      </div>
+
+      <div id="Ejemplo5" class="box">
+        <p>Ejemplo 5 — sombras mixtas.</p>
+      </div>
+
+      <div id="Ejemplo6" class="box">
+        <p>Ejemplo 6 — degradado y sombra colorida.</p>
+      </div>
+    </section>
+
+    <!-- Sección de desbordamiento -->
+    <section id="overflow-examples" class="grid-overflow">
+      <div class="overflow-box">
+        <h3>overflow: visible (por defecto)</h3>
+        <div class="box-overflow visible">
+          <p>Contenido largo que puede sobresalir del contenedor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repetir contenido para forzar desbordamiento: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="overflow-box">
+        <h3>overflow: hidden</h3>
+        <div class="box-overflow hidden">
+          <p>Contenido largo que se corta y no muestra scroll. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repetir contenido para forzar desbordamiento: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="overflow-box">
+        <h3>overflow: scroll</h3>
+        <div class="box-overflow scroll">
+          <p>Siempre muestra barras de desplazamiento. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repetir contenido para forzar desbordamiento: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+
+      <div class="overflow-box">
+        <h3>overflow: auto</h3>
+        <div class="box-overflow auto">
+          <p>Solo muestra scroll cuando es necesario. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repetir contenido para forzar desbordamiento: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- CONTENIDO DE LOS Cuadros -->
+    <p class="small">Actividad — sombras y desbordamiento Por: Mauricio Campos 45090</p>
+  </footer>
+
 </body>
 </html>
